@@ -21,8 +21,15 @@ body {
 
 .currentContainer {
   min-height: 40%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .foreContainer {
   min-height: 20%;
+}
+
+.InfoContainer {
+  flex: 1 1 0;
+  min-width: 30vw;
 }

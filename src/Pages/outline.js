@@ -13,6 +13,21 @@ const outline = () => {
   currentContainer.id = 'currentContainer';
   currentContainer.classList.add('currentContainer');
   container.appendChild(currentContainer);
+  // basic info container
+  const basicInfoContainer = document.createElement('div');
+  basicInfoContainer.id = 'basicInfoContainer';
+  basicInfoContainer.classList.add('InfoContainer');
+  currentContainer.appendChild(basicInfoContainer);
+  // location infor container
+  const locInfoContainer = document.createElement('div');
+  locInfoContainer.id = 'locInfoContainer';
+  locInfoContainer.classList.add('InfoContainer');
+  currentContainer.appendChild(locInfoContainer);
+  // addional infor container
+  const addInfoContainer = document.createElement('div');
+  addInfoContainer.id = 'addInfoContainer';
+  addInfoContainer.classList.add('InfoContainer');
+  currentContainer.appendChild(addInfoContainer);
 
   const foreContainer = document.createElement('div');
   foreContainer.id = 'foreContainer';

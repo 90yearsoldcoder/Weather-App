@@ -18,11 +18,11 @@ const outline = () => {
   basicInfoContainer.id = 'basicInfoContainer';
   basicInfoContainer.classList.add('InfoContainer');
   currentContainer.appendChild(basicInfoContainer);
-  // location infor container
-  const locInfoContainer = document.createElement('div');
-  locInfoContainer.id = 'locInfoContainer';
-  locInfoContainer.classList.add('InfoContainer');
-  currentContainer.appendChild(locInfoContainer);
+  // centre container
+  const centreContainer = document.createElement('div');
+  centreContainer.id = 'centreContainer';
+  centreContainer.classList.add('InfoContainer');
+  currentContainer.appendChild(centreContainer);
   // addional infor container
   const addInfoContainer = document.createElement('div');
   addInfoContainer.id = 'addInfoContainer';

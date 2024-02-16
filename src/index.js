@@ -1,6 +1,3 @@
-import WealtherAPI from './APIfunctions/wealtherAPI';
+import loadOutline from './loaders/loadOutline';
 
-const API = new WealtherAPI('Boston');
-API.getWealtherData().then((data) => {
-  console.log(data);
-});
+loadOutline();

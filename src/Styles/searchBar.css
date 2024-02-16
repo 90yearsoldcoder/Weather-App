@@ -1,0 +1,31 @@
+.searchBarContainer {
+  display: flex;
+  padding: 1px;
+  border-bottom: 3px solid var(--font-color);
+  justify-content: space-around;
+
+  padding: 5px;
+}
+
+.searchBar-input {
+  height: 18px;
+  border: none;
+  font-size: small;
+  font-weight: 600;
+  color: var(--font-color);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.searchBar-input:focus {
+  outline: none;
+}
+
+.search_icon {
+  height: 18px;
+  width: 18px;
+  padding: 0;
+  margin: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

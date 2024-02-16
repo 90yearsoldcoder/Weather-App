@@ -1,3 +1,3 @@
-import loadOutline from './loaders/loadOutline';
+import firstLoader from './loaders/firstLoader';
 
-loadOutline();
+firstLoader();

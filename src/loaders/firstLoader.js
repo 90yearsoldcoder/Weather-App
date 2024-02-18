@@ -3,6 +3,7 @@ import loadLocalInfo from './loadLocalInfo';
 import config from '../config';
 import loadOutline from './loadOutline';
 import loadSearchBar from './loadSearchbar';
+import basicInfoLoader from './basicInfoLoader';
 
 const firstLoader = () => {
   loadOutline();
@@ -12,6 +13,7 @@ const firstLoader = () => {
   API.getWealtherData().then((data) => {
     loadSearchBar();
     loadLocalInfo(data);
+    basicInfoLoader(data.current);
   });
 };
 

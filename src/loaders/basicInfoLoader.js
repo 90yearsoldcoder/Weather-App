@@ -12,7 +12,7 @@ const basicInfoLoader = (data) => {
   const icon = getIcon(iconNum, isDay);
 
   const unit = config.temperatureUnit;
-  const tempNum = data[config[unit]];
+  const tempNum = data[config[unit][0]];
   const temp = `${tempNum} ${unit}`;
 
   /*

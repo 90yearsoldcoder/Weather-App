@@ -4,6 +4,7 @@ import config from '../config';
 import loadOutline from './loadOutline';
 import loadSearchBar from './loadSearchbar';
 import basicInfoLoader from './basicInfoLoader';
+import addInfoLoader from './addInfoLoader';
 
 const firstLoader = () => {
   loadOutline();
@@ -14,6 +15,7 @@ const firstLoader = () => {
     loadSearchBar();
     loadLocalInfo(data);
     basicInfoLoader(data.current);
+    addInfoLoader(data.current);
   });
 };
 

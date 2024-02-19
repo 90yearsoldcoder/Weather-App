@@ -5,6 +5,7 @@ import loadOutline from './loadOutline';
 import loadSearchBar from './loadSearchbar';
 import basicInfoLoader from './basicInfoLoader';
 import addInfoLoader from './addInfoLoader';
+import foreInfoLoader from './foreInfoLoader';
 
 const firstLoader = () => {
   loadOutline();
@@ -16,6 +17,7 @@ const firstLoader = () => {
     loadLocalInfo(data);
     basicInfoLoader(data.current);
     addInfoLoader(data.current);
+    foreInfoLoader(data.forecast.forecastday);
   });
 };
 

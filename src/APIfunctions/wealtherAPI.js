@@ -6,7 +6,7 @@ class WealtherAPI {
   }
 
   generateForecastURL() {
-    return `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${this.city}&days=5&aqi=no&alerts=no`;
+    return `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${this.city}&days=6&aqi=no&alerts=no`;
   }
 
   async getWealtherData() {

@@ -6,6 +6,7 @@ const config = {
   '°F': ['temp_f', 'feelslike_f', 'avgtemp_c', 'maxtemp_c', 'mintemp_c'],
   kph: 'wind_kph',
   mph: 'wind_mph',
+  hourPageIndex: 0,
 };
 
 export default config;

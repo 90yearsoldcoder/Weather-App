@@ -38,9 +38,9 @@ const foreInfoCard = (rawdata) => {
   console.log(tempAvg);
   console.log(tempRange);
   console.log(conditionText);
-
-  */
   console.log(icon);
+  */
+
   const time = document.createElement('div');
   time.classList.add('time');
   time.innerText = formattedDate;

@@ -1,0 +1,9 @@
+.foreDayInfoCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hidden {
+  display: none;
+}

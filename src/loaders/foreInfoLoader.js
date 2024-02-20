@@ -6,14 +6,14 @@ import foreControler from '../Pages/foreControler';
 // data: .forecast.forecastday
 const foreInfoLoader = (data) => {
   const foreContainer = document.querySelector('#foreContainer');
-  clear(foreContainer);
+  clear(foreContainer.id);
 
   const daysData = data.slice(1);
   const hoursData = data[0];
-
-  foreContainer.appendChild(foreControler());
   foreContainer.appendChild(foreInfoDaysPage(daysData));
-  foreContainer.appendChild(foreInfoHourlyPage(hoursData));
+  /*
+  foreContainer.appendChild(foreControler());
+  foreContainer.appendChild(foreInfoHourlyPage(hoursData)); */
 };
 
 export default foreInfoLoader;

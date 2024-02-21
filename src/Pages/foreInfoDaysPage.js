@@ -7,7 +7,7 @@ const foreInfoDaysPage = (data) => {
   foreDayInfoCards.classList.add('foreDayInfoCards');
 
   Object.values(data).forEach((item) => {
-    console.log(item.date);
+    // console.log(item.date);
     foreDayInfoCards.appendChild(foreInfoCard(item));
   });
 

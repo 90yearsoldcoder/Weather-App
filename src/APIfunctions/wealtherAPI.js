@@ -15,6 +15,10 @@ class WealtherAPI {
     const respose = await fetch(url, { mode: 'cors' });
     const wealtherData = await respose.json();
 
+    if ('error' in wealtherData) {
+      throw Error(wealtherData.error.message);
+    }
+
     return wealtherData;
   }
 }

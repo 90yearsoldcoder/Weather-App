@@ -11,12 +11,10 @@ const foreInfoLoader = (data) => {
 
   const daysData = data.slice(1);
   const hoursData = data[0];
+  foreContainer.appendChild(foreControler());
   foreContainer.appendChild(foreInfoDaysPage(daysData));
   foreContainer.appendChild(foreInfoHourlyPage(hoursData));
   updateHourCard();
-  /*
-  foreContainer.appendChild(foreControler());
-  foreContainer.appendChild(foreInfoHourlyPage(hoursData)); */
 };
 
 export default foreInfoLoader;

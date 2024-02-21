@@ -12,7 +12,7 @@ const foreInfoHourlyPage = (data) => {
   Object.values(dataHours).forEach((item) => {
     // console.log(item);
     index += 1;
-    const page = `hourlyPage${Math.floor(index / 5)}`;
+    const page = `hourlyPage${Math.floor(index / 8)}`;
     // console.log(page);
     foreHourlyInfoCards.appendChild(foreInfoHourCard(item, page));
   });

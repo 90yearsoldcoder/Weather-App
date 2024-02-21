@@ -1,6 +1,8 @@
 import '../Styles/foreControlerPage.css';
 import arrLeftIcon from '../assets/arrow_left.svg';
 import arrRightIcon from '../assets/arrow_right.svg';
+import updateHourCard from '../functions/updateHourCard';
+import config from '../config';
 
 const generateDot = (dotId) => {
   const dot = document.createElement('div');
@@ -64,6 +66,13 @@ const foreControler = () => {
   arrLeft.classList.add('arrIcon');
   arrLeft.src = arrLeftIcon;
   pageConroller.appendChild(arrLeft);
+  arrLeft.addEventListener('click', () => {
+    let pageIndex = config.hourPageIndex;
+    pageIndex -= 1;
+    if (pageIndex < 0) pageIndex = 2;
+    config.hourPageIndex = pageIndex;
+    updateHourCard();
+  });
 
   pageConroller.appendChild(generateDot('dot0'));
   pageConroller.appendChild(generateDot('dot1'));
@@ -73,6 +82,11 @@ const foreControler = () => {
   arrRight.classList.add('arrIcon');
   arrRight.src = arrRightIcon;
   pageConroller.appendChild(arrRight);
+  arrRight.addEventListener('click', () => {
+    const pageIndex = config.hourPageIndex;
+    config.hourPageIndex = (pageIndex + 1) % 3;
+    updateHourCard();
+  });
 
   return controlerContainer;
 };

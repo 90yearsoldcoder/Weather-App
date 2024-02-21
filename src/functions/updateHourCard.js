@@ -11,6 +11,13 @@ const updateHourCard = () => {
     if (card.classList.contains(tag)) card.classList.remove('hidden');
     else card.classList.add('hidden');
   });
+
+  const dotTag = `dot${hourPageIndex}`;
+  const dots = document.querySelectorAll('.dot');
+  dots.forEach((dot) => {
+    if (dot.id === dotTag) dot.classList.add('curDot');
+    else dot.classList.remove('curDot');
+  });
 };
 
 export default updateHourCard;

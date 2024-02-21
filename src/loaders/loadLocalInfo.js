@@ -6,6 +6,7 @@ const loadLocalInfo = (data) => {
   remove('locInfoContainer');
 
   const container = document.querySelector('#centreContainer');
+  remove('localInfoContainer');
   container.appendChild(localInfoPage(data));
 };
 

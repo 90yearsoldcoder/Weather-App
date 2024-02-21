@@ -1,5 +1,6 @@
 import config from '../config';
 import addInfoPage from '../Pages/addInfoPage';
+import clear from '../functions/clear';
 
 // here the data is data['current']
 const addInfoLoader = (data) => {
@@ -24,6 +25,7 @@ const addInfoLoader = (data) => {
   */
 
   const addInfoContainer = document.querySelector('#addInfoContainer');
+  clear('addInfoContainer');
   const page = addInfoPage(feelsliketemp, humidity, uv, windSpeed);
   addInfoContainer.appendChild(page);
 };

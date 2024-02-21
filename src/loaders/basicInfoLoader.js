@@ -2,6 +2,7 @@ import config from '../config';
 import parseIconURL from '../functions/parseIconURL';
 import getIcon from '../functions/getIcon';
 import basicInfoPage from '../Pages/basicInfoPage';
+import clear from '../functions/clear';
 
 // here the data is data['current']
 const basicInfoLoader = (data) => {
@@ -22,6 +23,7 @@ const basicInfoLoader = (data) => {
   */
 
   const basicInfoContainer = document.querySelector('#basicInfoContainer');
+  clear('basicInfoContainer');
   const basicInfo = basicInfoPage(conditionText, temp, icon);
   basicInfoContainer.appendChild(basicInfo);
 };
